@@ -1,5 +1,4 @@
 import numpy as np
-import pdb 
 from polytope import polytope
 
 class MAP(object):

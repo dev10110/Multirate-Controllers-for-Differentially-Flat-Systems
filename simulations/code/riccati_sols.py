@@ -1,3 +1,5 @@
+# @brief: provides a method to solve the modified Ricatti Equation
+
 import numpy as np
 from scipy.linalg import solve_continuous_are
 

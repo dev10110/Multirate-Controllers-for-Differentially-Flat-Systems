@@ -364,10 +364,7 @@ plt.subplot(212)
 plt.plot(robot.times[1:], robot.controls_w_perturbed[1:])
 plt.plot(robot.times, robot.controls_w,'g')
 plt.ylabel("Angular velocity")
-# plt.subplot(313)
-# plt.plot(robot.times[:-1], r_plot)
-# plt.xlabel('time')
-# plt.ylabel("radial dist")
+
 
 plt.savefig("figs/controls_tracking.eps")
 plt.savefig("figs/controls_tracking.png")

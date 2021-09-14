@@ -1,10 +1,6 @@
 import pypoman
-from numpy import array, eye, ones, vstack, zeros
 import numpy as np
-import scipy
-import pdb
 import matplotlib.pyplot as plt
-from matplotlib.patches import Polygon
 
 class polytope(object):
 	"""docstring for polytope"""

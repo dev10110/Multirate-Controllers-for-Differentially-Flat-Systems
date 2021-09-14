@@ -1,27 +1,16 @@
 import numpy as np
 from utils import *
 
-
-
 def flat_space_control(dt, X, X_ref, U_ref, P, K, Vmax):
     	
 	e = X - X_ref
 
-	# RBP = np.array([ [ 1,0,np.sqrt(3),0 ], [0,1,0,np.sqrt(3)]  ])
 	U_e = - K @ e
 
 	U = U_ref + U_e
 
 	Lyapunov = 0.5 * e.T @ P @ e
-	# print("P IN LOWLEVEL", P)
-	# print("e in low level:", e)
-	# exit()
 
-	# if Lyapunov >= Vmax + 0.1:
-	# 	print("LYAPUNOV BOUND BROKEN!")
-	# 	exit()
-		
- 
 	A = np.array([[1, 0, dt,  0], 
           [0, 1,  0, dt],
           [0, 0,  1,  0],
@@ -52,6 +41,4 @@ def flat_space_control(dt, X, X_ref, U_ref, P, K, Vmax):
 		print("FORCEFULLY LIMITING OMEGA from ", w)
 		w = -3.0
 	
-		
-
 	return v, w, Lyapunov[0,0]
