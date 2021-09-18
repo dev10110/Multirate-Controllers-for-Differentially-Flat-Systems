@@ -6,6 +6,8 @@ The paper was submitted to L-CSS, for ACC 2022.
 
 ## Video
 
+[![Constructive Multirate Controllers for Differentially Flat Systems](http://img.youtube.com/vi/1IuUIOUQ9g4/0.jpg)](http://www.youtube.com/watch?v=1IuUIOUQ9g4 "Constructive Multirate Controllers for Differentially Flat Systems")
+
 ## Abstract
 
 ## Repository Structure
